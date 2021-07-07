@@ -1,0 +1,23 @@
+.u-center {
+  text-align: center !important;
+}
+
+.u-text-bold {
+  font-weight: bold !important;
+}
+
+.u-sp-only {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.u-sp-br {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}

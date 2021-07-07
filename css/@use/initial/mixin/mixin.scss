@@ -1,0 +1,35 @@
+$breakpoints: (
+  "sp": "screen and (max-width: 500px)",
+  "md": "screen and (max-width: 768px)",
+  "hd": "screen and (max-width: 1050px)",
+  "lg": "screen and (max-width: 960px)",
+  "xl": "screen and (max-width: 1140px)",
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size / 16) * 1rem;
+}
+
+
+
+
+@mixin wrapper($top, $bottom) {
+    // border: 1px solid black;
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin inner($maw, $pa) {
+    // border: 1px solid black;
+    max-width: $maw;
+    padding: 0 $pa;
+    margin: 0 auto;
+}

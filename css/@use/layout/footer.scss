@@ -1,0 +1,17 @@
+
+/*--------------------------------------------------------- */
+/*footer
+/*--------------------------------------------------------- */
+.footer {
+    margin-top: 50px;
+    small {
+        display: block;
+        padding: 20px 20px 20px 0;
+        @include inner(1920px, 30px);
+        @include mq(md){
+            @include inner(768px, 0);
+          text-align: center;
+        }
+        text-align: right;
+    }
+}

@@ -1,0 +1,13 @@
+.section-title {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  color: #391E88;
+}
+
+.section-title span {
+  margin-top: 10px;
+  display: block;
+  font-size: 13px;
+  color: #391E88;
+}

@@ -1,0 +1,13 @@
+
+
+.section__ttl {
+    display: block;
+    text-align: center;
+    &-en{
+        @include font-size(30);
+        margin-bottom:15px;
+    }
+    &-jp{
+        @include font-size(20);
+    }
+}
